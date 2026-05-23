@@ -1,0 +1,25 @@
+import { MetadataRoute } from 'next'
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: 'Apna Partner',
+    short_name: 'Apna Partner',
+    description: 'Jharkhand Ka Apna, Pyar Ka Sapna',
+    start_url: '/',
+    display: 'standalone',
+    background_color: '#ffffff',
+    theme_color: '#F20F67',
+    icons: [
+      {
+        src: 'https://picsum.photos/seed/logo/192/192',
+        sizes: '192x192',
+        type: 'image/png',
+      },
+      {
+        src: 'https://picsum.photos/seed/logo/512/512',
+        sizes: '512x512',
+        type: 'image/png',
+      },
+    ],
+  }
+}
